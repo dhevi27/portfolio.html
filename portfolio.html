@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Dhevi Samuktha A, a Computer Science student specializing in Java and web development">
+    <title>Dhevi Samuktha A - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favPic.jpeg" alt="Favicon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/portf.css" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Dhevi</a>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hey, I'm <span class="highlight">Dhevi</span>!</h1>
+            <h2>CS Student & Code Enthusiast</h2>
+            <p>I love building cool apps with Java and creating fun, responsive websites!</p>
+            <div class="h-buttons">
+                <a href="#projects" class="btn b-primary">See My Projects</a>
+                <a href="#contact" class="btn b-secondary">Say Hi</a>
+            </div>
+        </div>
+        <div class="h-image">
+            <img class="profile-pic" src="favPic.jpeg" alt="Dhevi Samuktha A" loading="lazy">
+        </div>
+    </header>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I'm a Computer Science student at Scaler School of Technology, passionate about coding with Java and crafting awesome websites with HTML and CSS.</p>
+                
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Web Development</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Linux</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Cool Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="dog.jpeg" alt="Java Calculator" loading="lazy">
+                    <div class="project-info">
+                        <h3>Dog Gallery</h3>
+                       
+                        <div class="project-links">
+                            <a href="https://github.com/dhevi27/web-development/blob/main/doggallery.html" target="_blank">Code</a>
+                           
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+<img src="solar.jpeg" alt="Portfolio Website" loading="lazy">
+                    <div class="project-info">
+                        <h3>Solar System</h3>
+                       
+                        <div class="project-links">
+                            <a href="https://github.com/dhevi27/web-development/blob/main/solarSystem.html" target="_blank">Code</a>
+                           
+                        </div>
+                    </div>
+                </article>
+                 <article class="project-card">
+                    <img src="portf.jpeg" alt="Java Calculator" loading="lazy">
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                       
+                        <div class="project-links">
+                            <a href="https://github.com/dhevi/calculator" target="_blank">Code</a>
+                            
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Chat</h2>
+            <div class="contact-content">
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="What's up?" rows="5" required></textarea>
+                    <button type="submit">Send It!</button>
+                </form>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:dhevi.27@gmail.com">dhevi.27@gmail.com</a></p>
+                    <p><strong>Find Me:</strong> <a href="https://github.com/dhevi" target="_blank">GitHub</a> </p>
+                    <p><strong>Location:</strong> Bangalore, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dhevi Samuktha A</p>
+            <div class="footer-social">
+                <a href="https://github.com/dhevi27" target="_blank">GitHub</a>
+               
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
